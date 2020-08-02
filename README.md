@@ -4,7 +4,8 @@
 
 Practice to nomadcoder clone project
 
-- [https://paint-box.com/](https://paint-box.com/)
+- demo : https://jhseo-git.github.io/scss-tolv/
+- target : [https://tolv.dk/](https://tolv.dk/)
 
 ## To Clone:
 
