@@ -47,6 +47,36 @@ header {
   }
 }
 
-main {
-  margin-top: 50px;
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100vh;
+  .hero__img {
+    background-image: url("https://source.unsplash.com/random");
+    background-position: center center;
+    background-size: cover;
+  }
+  .hero__text {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 32px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.5;
+    }
+    span {
+      font-size: 12px;
+      a {
+        color: #ff6429;
+        font-weight: 700;
+      }
+    }
+  }
 }
