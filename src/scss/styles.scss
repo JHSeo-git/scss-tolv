@@ -74,7 +74,7 @@ header {
     span {
       font-size: 14px;
       a {
-        color: #ff6429;
+        color: $orange;
         font-weight: 700;
       }
     }
@@ -83,7 +83,7 @@ header {
 
 .banner {
   background-color: #efcb56;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,9 +99,34 @@ header {
     margin-bottom: 30px;
   }
   span {
-    font-size: 12px;
+    font-size: 14px;
     a {
       color: $orange;
+      font-weight: 700;
+    }
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 30vh;
+  gap: 1px;
+  .gallery__item {
+    background-image: url("https://source.unsplash.com/random");
+    background-size: cover;
+    background-position: center;
+    transition: all 0.1s linear;
+    cursor: pointer;
+    overflow: hidden;
+    &:first-child,
+    &:nth-child(5),
+    &:nth-child(7),
+    &:nth-child(10) {
+      grid-column-start: span 2;
+    }
+    &:hover {
+      filter: blur(30px);
     }
   }
 }
